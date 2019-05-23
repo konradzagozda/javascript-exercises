@@ -1,9 +1,12 @@
-const ftoc = function() {
 
+//fahrenheit to celsius
+const ftoc = function(num) {
+  return +((num - 32)*5/9).toFixed(1);
 }
 
-const ctof = function() {
-
+//celsius to fahrenheit
+const ctof = function(num) {
+  return +(num * 9/5 +32).toFixed(1);
 }
 
 module.exports = {
